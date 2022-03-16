@@ -1,0 +1,11 @@
+.input-field button {
+  border-radius: 50px;
+  background: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
+  color: white !important;
+  font-weight: bold;
+}
+
+.icon-label {
+  margin-left: 1rem;
+}
+

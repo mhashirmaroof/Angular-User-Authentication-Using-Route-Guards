@@ -1,0 +1,36 @@
+<div class="conainter">
+<div class="text-center pb-5"><h1><b>Login Form</b></h1>
+</div>
+<form [formGroup]="loginForm" (ngSubmit)="logedIn()" class="" >
+   <div class="row">
+     <div class="col">
+      <i class="fa fa-user-circle"></i>
+       <label class="icon-label">Email Address</label>
+       <input type="text" email formControlName="email" class="form-control" placeholder="Enter your Email" name="email" required>
+     </div>
+   </div>
+   <div class="row">
+      <div class="col">
+        <i class="fa fa-key"></i>
+        <label class="icon-label">Password</label>
+        <input type="password" formControlName="psw" class="form-control" placeholder="Enter your Password" name="psw" required>
+      </div>
+      <div class="text-end"><a routerLink="" >Forget Password?</a></div>
+    </div>
+        <div class="input-field button text-center">
+          <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">Login</button>
+          <br>
+          <span>{{alertmsg}}</span>
+        </div>
+        <div class="row">
+      <div class= "text-center pt-5" >Or Sign Up Using</div>
+      <div class="text-center " >
+       <img src="../../../assets/fb.png">
+       <img src="../../../assets/twr.png">
+       <img src="../../../assets/yt.png">
+      </div>
+      <div class="text-center pt-5" >Don't have an account?</div>
+      <a class="text-center" routerLink="/register">Register here</a>
+    </div>
+</form>
+</div>
